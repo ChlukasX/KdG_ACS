@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A02_Helloworld/A02_Helloworld.iml" filepath="$PROJECT_DIR$/java_m1/A02_Helloworld/A02_Helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A03_Sum/A03_Sum.iml" filepath="$PROJECT_DIR$/java_m1/A03_Sum/A03_Sum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A04_Welcome/A04_Welcome.iml" filepath="$PROJECT_DIR$/java_m1/A04_Welcome/A04_Welcome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A05_Product/A05_Product.iml" filepath="$PROJECT_DIR$/java_m1/A05_Product/A05_Product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A06_Age/A06_Age.iml" filepath="$PROJECT_DIR$/java_m1/A06_Age/A06_Age.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A07_BMIv01/A07_BMIv01.iml" filepath="$PROJECT_DIR$/java_m1/A07_BMIv01/A07_BMIv01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A08_HigherLower/A08_HigherLower.iml" filepath="$PROJECT_DIR$/java_m1/A08_HigherLower/A08_HigherLower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A09_BMIv02/A09_BMIv02.iml" filepath="$PROJECT_DIR$/java_m1/A09_BMIv02/A09_BMIv02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A10_Summation/A10_Summation.iml" filepath="$PROJECT_DIR$/java_m1/A10_Summation/A10_Summation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A11_Between/A11_Between.iml" filepath="$PROJECT_DIR$/java_m1/A11_Between/A11_Between.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m1/A12_Calculate/A12_Calculate.iml" filepath="$PROJECT_DIR$/java_m1/A12_Calculate/A12_Calculate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m2/B01_Variable/B01_Variable.iml" filepath="$PROJECT_DIR$/java_m2/B01_Variable/B01_Variable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m2/B02_NumbersV1/B02_NumbersV2.iml" filepath="$PROJECT_DIR$/java_m2/B02_NumbersV1/B02_NumbersV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m2/B03_Taxes/B03_Taxes.iml" filepath="$PROJECT_DIR$/java_m2/B03_Taxes/B03_Taxes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GetDigitallyReady/GetDigitallyReady.iml" filepath="$PROJECT_DIR$/GetDigitallyReady/GetDigitallyReady.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_m2/B04_NumbersV2/NumbersV1.iml" filepath="$PROJECT_DIR$/java_m2/B04_NumbersV2/NumbersV1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/prog1.iml" filepath="$PROJECT_DIR$/.idea/prog1.iml" />
+    </modules>
+  </component>
+</project>

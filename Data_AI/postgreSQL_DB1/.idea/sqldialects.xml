@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Databases/Enterprise/_pg_CRE_ENTERPRISE_EN.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Databases/Enterprise/_pg_FILL_ENTERPRISE_EN.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Databases/Holidaypark/_pg_CRE_HOLIDAYPARK_EN.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Databases/Holidaypark/_pg_FILL_HOLIDAYPARK_EN.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Week1/DB1_Week1.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Week2/DB1_Week2.sql" dialect="GenericSQL" />
+  </component>
+</project>
