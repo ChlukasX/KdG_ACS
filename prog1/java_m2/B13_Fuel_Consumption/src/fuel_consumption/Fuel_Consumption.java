@@ -18,6 +18,6 @@ public class Fuel_Consumption
         int distance = current - previous;
         double sum = distance / fuel;
 
-        System.out.print("Consumption for " + distance +"km driven: " + sum + " liters/100km");
+        System.out.print("Consumption for " + distance + "km driven: " + sum + " liters/100km");
     }
 }
