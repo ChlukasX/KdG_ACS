@@ -18,13 +18,12 @@ public class Taxes
         double vati = vat / 100; double vatii = vati + 1;
 
         if (choice == 1){
-            double sumi = amount * vatii; //include VAT
+            double sumi = amount * vatii;
             double novat = (amount - sumi) + amount;
             System.out.print("€" + novat + " + " + vat + "% VAT = €" ); System.out.printf("%.2f", amount);}
         else if (choice == 2){
-            double sum = amount / vatii; //exclude VAT
-            double with = amount - sum;
-            System.out.print("€" + amount + " + " + vat + "% VAT = €" ); System.out.printf("%.2f", with);}
+            double exclusive_amount = amount + vat;
+            System.out.print("€" + amount + " + " + vat + "% VAT = €" ); System.out.printf("%.2f", exclusive_amount);}
         else if (choice != 1 || choice != 2)
             System.out.print("Invalid choice!");
     }

@@ -97,3 +97,32 @@ FROM employees
 WHERE first_name IN ('Suzan', 'Martina', 'Henk', 'Douglas') ORDER BY department_id desc, first_name asc;
 
 --ex.16
+SELECT last_name, salary, department_id
+FROM employees
+WHERE salary < 40000 AND department_id = 7 OR employee_id = '999666666';
+
+--ex.17
+SELECT last_name, department_id
+FROM employees
+WHERE upper(location) <> 'MAARSSEN' AND upper(location) <> 'EINDHOVEN';
+
+--ex.18
+--a
+SELECT employee_id, project_id, hours
+FROM tasks
+ORDER BY hours asc NULLS first;
+
+--b
+SELECT employee_id, project_id, hours
+FROM tasks
+ORDER BY hours desc NULLS LAST ;
+
+--ex.19
+SELECT last_name, location AS "City", salary
+FROM employees
+WHERE salary > 30000 AND initcap(location) like 'M%' OR initcap(location) like 'O%';
+
+--ex.20
+SELECT name
+FROM family_members
+WHERE birth_date IN ('1988-01-01','1988-12-31');
