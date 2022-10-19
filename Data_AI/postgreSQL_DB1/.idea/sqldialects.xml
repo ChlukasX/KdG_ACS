@@ -8,5 +8,7 @@
     <file url="file://$PROJECT_DIR$/SQL/Week1/DB1_Week1.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/SQL/Week2/DB1_Week2.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/SQL/Week3/DB1_Week3.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Week4/DB1_Week4.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Week4/DB1_Week4_OJ.sql" dialect="GenericSQL" />
   </component>
 </project>

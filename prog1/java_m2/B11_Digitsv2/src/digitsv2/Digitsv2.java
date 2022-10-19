@@ -8,15 +8,19 @@ public class Digitsv2
         Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Enter a 4-digit whole number (1000...9999): ");
-        String number = keyboard.nextLine();
+        int number = keyboard.nextInt();
 
-        Integer.parseInt(number);
-        int sum1 = 0;
-        int sum = 0;
-        while (number != null) {
-
-            number++;
+        int loop = 0;
+        int add = 0;
+        int add1 = 0;
+        while (loop != 2)
+        {
+            int sum = 0;
+            add = sum + number;
+            add = add;
+            //add = add + add;
+            loop++;
         }
-        System.out.print(sum);
+        System.out.print(add);
     }
 }
