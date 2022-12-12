@@ -5,7 +5,7 @@ html {
 
 html, body {
     color: #FFFFFF;
-    background: black url(/Images/background.png);
+    background: black url(/Website/Images/background.png);
     background-attachment: fixed;
 }
 
@@ -18,6 +18,12 @@ body {
     background-color: black;
 }
 
+tbody {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .banner {
     width: 800px;
     margin-top: auto;
@@ -25,22 +31,31 @@ body {
 }
 
 table {
-    background: black url(/Images/black.jpg);
+    background: black url(/Website/Images/black.jpg);
     width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
 tfoot {
+    width: 800px;
     position: fixed;
     bottom: 0;
+}
 
+tr {
+    width: 800px;
+}
+
+td {
+    width: 800px;
 }
 
 .banner-image {
     width: 800px;
     height: 120px;
     border: 0;
+    margin: 0;
     align-items: center;
 }
 
@@ -48,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-family: "Minecraft", sans-serif;
     font-weight: bold;
+    margin-top: 10;
 }
 
 a {
@@ -55,14 +71,48 @@ a {
     font-weight: bold;
     color: #FFFFFF;
     text-decoration: none;
+    padding: 10;
+}
+
+.image-link {
+    padding: 0;
+    margin: 0;
+    height: 120px;
 }
 
 a.highlight:hover {
     color: #c8cb00;
 }
 
+p {
+    font-family: sans-serif;
+    font-size: 10;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10;
+}
+
+.sign {
+    width: 0;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+}
+
 ul {
     padding: 0.5em 0;
     margin: 0;
     clear: left;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 10;
+    margin-bottom: 10;
+    text-align: center;
+}
+
+br {
+    margin: 0;
 }
