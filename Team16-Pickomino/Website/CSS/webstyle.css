@@ -1,0 +1,68 @@
+html {
+    min-height: 100%;
+    margin-bottom: 1px;
+}
+
+html, body {
+    color: #FFFFFF;
+    background: black url(/Images/background.png);
+    background-attachment: fixed;
+}
+
+body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.banner {
+    width: 800px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+table {
+    background: black url(/Images/black.jpg);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tfoot {
+    position: fixed;
+    bottom: 0;
+
+}
+
+.banner-image {
+    width: 800px;
+    height: 120px;
+    border: 0;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: "Minecraft", sans-serif;
+    font-weight: bold;
+}
+
+a {
+    font-family: "Minecraft", sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.highlight:hover {
+    color: #c8cb00;
+}
+
+ul {
+    padding: 0.5em 0;
+    margin: 0;
+    clear: left;
+}
