@@ -1,3 +1,11 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(/minecraft-font/MinecraftRegular-Bmg3.otf);
+    src: url(/minecraft-font/MinecraftItalic-R8Mo.otf);
+    src: url(/minecraft-font/MinecraftBoldItalic-1y1e.otf);
+    src: url(/minecraft-font/MinecraftBold-nMK1.otf);
+}
+
 html {
     min-height: 100%;
     margin-bottom: 1px;
@@ -5,7 +13,7 @@ html {
 
 html, body {
     color: #FFFFFF;
-    background: black url(/Website/Images/background.png);
+    background: black url(/Images/background.png); /* The Image background */
     background-attachment: fixed;
 }
 
@@ -24,14 +32,14 @@ tbody {
     margin-right: auto;
 }
 
-.banner {
+.banner { /* class for the top menu select thing */
     width: 800px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 table {
-    background: black url(/Website/Images/black.jpg);
+    background: black url(/Images/black.jpg);
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -39,7 +47,7 @@ table {
 
 tfoot {
     width: 800px;
-    position: fixed;
+    position: static; /* Footer is either alwayse shown or at the bottom. What to do?*/
     bottom: 0;
 }
 
@@ -51,7 +59,7 @@ td {
     width: 800px;
 }
 
-.banner-image {
+.banner-image { /* Class for the pickomino main image on title (Fun fact you can click both home and pickomino image to go back */
     width: 800px;
     height: 120px;
     border: 0;
@@ -66,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10;
 }
 
-a {
+a { /* All a text will have Minecraft font, needs to be installed localy tho. maybe once there is a way to have it preload. */
     font-family: "Minecraft", sans-serif;
     font-weight: bold;
     color: #FFFFFF;
@@ -74,13 +82,13 @@ a {
     padding: 10;
 }
 
-.image-link {
+.image-link { /* specific class for the banner image of the title. don't touch */
     padding: 0;
     margin: 0;
     height: 120px;
 }
 
-a.highlight:hover {
+a.highlight:hover { /* This makes the text turn yello, like snow */
     color: #c8cb00;
 }
 
@@ -92,7 +100,7 @@ p {
     padding: 10;
 }
 
-.sign {
+.sign { /* Class for this thing " | " don't know if it is best implementation but it looks fine */ /* It is called a pipe, now I remember */
     width: 0;
     font-weight: bold;
     font-size: 20px;
@@ -105,7 +113,7 @@ ul {
     clear: left;
 }
 
-img {
+img { /* There will most lickley be many different types of image classes later. idk. */
     display: block;
     margin: auto;
     margin-top: 10;
