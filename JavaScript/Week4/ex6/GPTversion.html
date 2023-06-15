@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Conway's Game of Life</title>
+    <style>
+        .cell {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conway's Game of Life</h1>
+    <div id="game"></div>
+    <button id="nextButton">Next</button>
+
+    <script>
+        // Model module
+        const HEIGHT = 30;
+        const WIDTH = 30;
+
+        let grid = createGrid();
+        let next = createGrid();
+
+        function createGrid() {
+            const grid = [];
+            for (let i = 0; i < HEIGHT; i++) {
+                grid[i] = [];
+                for (let j = 0; j < WIDTH; j++) {
+                    grid[i][j] = Math.random() < 0.33;
+                }
+            }
+            return grid;
+        }
+
+        function countNeighbors(row, col) {
+            let count = 0;
+            for (let i = -1; i <= 1; i++) {
+                for (let j = -1; j <= 1; j++) {
+                    if (i === 0 && j === 0) continue;
+                    const newRow = row + i;
+                    const newCol = col + j;
+                    if (newRow >= 0 && newRow < HEIGHT && newCol >= 0 && newCol < WIDTH) {
+                        if (grid[newRow][newCol]) {
+                            count++;
+                        }
+                    }
+                }
+            }
+            return count;
+        }
+
+        function calculateNextGeneration() {
+            for (let i = 0; i < HEIGHT; i++) {
+                for (let j = 0; j < WIDTH; j++) {
+                    const neighbors = countNeighbors(i, j);
+                    if (grid[i][j]) {
+                        if (neighbors < 2 || neighbors > 3) {
+                            next[i][j] = false;
+                        } else {
+                            next[i][j] = true;
+                        }
+                    } else {
+                        if (neighbors === 3) {
+                            next[i][j] = true;
+                        } else {
+                            next[i][j] = false;
+                        }
+                    }
+                }
+            }
+            // Swap grid and next arrays
+            const temp = grid;
+            grid = next;
+            next = temp;
+        }
+
+        // Presenter module
+        const gameContainer = document.getElementById("game");
+        const nextButton = document.getElementById("nextButton");
+
+        function createCheckbox(row, col) {
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.checked = grid[row][col];
+            checkbox.className = "cell";
+            checkbox.addEventListener("change", function () {
+                grid[row][col] = checkbox.checked;
+            });
+            return checkbox;
+        }
+
+        function drawGrid() {
+            gameContainer.innerHTML = "";
+            for (let i = 0; i < HEIGHT; i++) {
+                for (let j = 0; j < WIDTH; j++) {
+                    const checkbox = createCheckbox(i, j);
+                    gameContainer.appendChild(checkbox);
+                }
+                gameContainer.appendChild(document.createElement("br"));
+            }
+        }
+
+        function updateView() {
+            const checkboxes = document.querySelectorAll(".cell");
+            checkboxes.forEach(function (checkbox, index) {
+                checkbox.checked = grid[Math.floor(index / WIDTH)][index % WIDTH];
+            });
+        }
+
+        function handleNextButtonClick() {
+            calculateNextGeneration();
+            updateView();
+        }
+
+        nextButton.addEventListener("click", handleNextButtonClick);
+
+        // Initial setup
+        drawGrid();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    font-family: arial, verdana, sans-serif;
+    font-size: 20pt;
+}
+
+ol#tablinks {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f1f1;
+}
+
+ol#tablinks li {
+    display: inline;
+    list-style: none;
+}
+
+ol#tablinks li a {
+    text-decoration: none;
+    color: black;
+    background-color: #eee;
+    padding: 6px 6px 0 6px;
+}
+
+ol#tablinks li a:hover {
+    background-color: #aaa;
+}
+
+ol#tablinks li a.active {
+    background-color: #ccc;
+}
+
+section#tabcontents section {
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
