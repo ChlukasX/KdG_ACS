@@ -29,5 +29,23 @@ function calculate(funct, data, char) {
   }
   let result = data.reduce(funct);
   console.log("Result: ", result);
-  return result
+
+  let elementPlusSign = data.join(char);
+
+  console.log(`${elementPlusSign} = ${result}`);
 }
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function add(a, b) {
+  return a + b;
+}
+
+const data = [1, 2, 3, 4, 5, 6];
+
+calculate(add, data, "+");
+calculate(multiply, data, "*");
+
+export { calculate, add, multiply };
