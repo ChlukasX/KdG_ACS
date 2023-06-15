@@ -27,5 +27,7 @@ function calculate(funct, data, char) {
   if (data.length < 2) {
     throw new Error("Error: data to small");
   }
-  data.map(d => $)
+  let result = data.reduce(funct);
+  console.log("Result: ", result);
+  return result
 }
